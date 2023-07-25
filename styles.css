@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: black; /* Change the background color to black */
+    background-color: black;
 }
 
 .calculator {
@@ -14,7 +14,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #444; /* Add a dark gray background for the calculator */
+    background-color: #444;
 }
 
 #display {
@@ -25,8 +25,8 @@ body {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #222; /* Add a dark gray background for the display */
-    color: #fff; /* Set the text color to white */
+    background-color: #222;
+    color: #fff;
 }
 
 .buttons {
@@ -40,12 +40,12 @@ button {
     font-size: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #222; /* Add a dark gray background for the buttons */
-    color: #fff; /* Set the text color to white */
+    background-color: #222;
+    color: #fff;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #333; /* Slightly lighter shade on hover */
+    background-color: #333;
 }
 
