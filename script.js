@@ -9,12 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let previousInput = "";
     let currentOperator = null;
 
-    // Helper function to update the display
+
     function updateDisplay() {
       display.value = currentInput;
     }
 
-    // Event listeners for number buttons
     numberButtons.forEach((button) => {
       button.addEventListener("click", function () {
         currentInput += button.innerText;
@@ -22,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-    // Event listeners for operator buttons
     operatorButtons.forEach((button) => {
       button.addEventListener("click", function () {
         if (currentInput === "") return;
@@ -35,10 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
-    // Event listener for the calculate button
     calculateButton.addEventListener("click", calculate);
 
-    // Event listener for the clear button
+
     clearButton.addEventListener("click", function () {
       currentInput = "";
       previousInput = "";
@@ -46,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
       updateDisplay();
     });
 
-    // Perform the calculation
+
     function calculate() {
       if (currentInput === "" || previousInput === "" || currentOperator === null) return;
       const currentValue = parseFloat(currentInput);
