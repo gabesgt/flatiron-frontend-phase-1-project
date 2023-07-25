@@ -51,22 +51,32 @@ document.addEventListener("DOMContentLoaded", function () {
       if (currentInput === "" || previousInput === "" || currentOperator === null) return;
       const currentValue = parseFloat(currentInput);
       const previousValue = parseFloat(previousInput);
+      let result;
       switch (currentOperator) {
         case "+":
-          currentInput = (previousValue + currentValue).toString();
+          result = previousValue + currentValue;
           break;
         case "-":
-          currentInput = (previousValue - currentValue).toString();
+          result = previousValue - currentValue;
           break;
         case "*":
-          currentInput = (previousValue * currentValue).toString();
+          result = previousValue * currentValue;
           break;
         case "/":
-          currentInput = (previousValue / currentValue).toString();
+          if (currentValue === 0) {
+            result = "Error";
+          } else {
+            result = previousValue / currentValue;
+          }
           break;
       }
+      currentInput = result.toString();
       previousInput = "";
       currentOperator = null;
       updateDisplay();
     }
   });
+
+
+
+

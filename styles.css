@@ -1,3 +1,51 @@
-body{
-    background-color: aqua;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black; /* Change the background color to black */
 }
+
+.calculator {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #444; /* Add a dark gray background for the calculator */
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #222; /* Add a dark gray background for the display */
+    color: #fff; /* Set the text color to white */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #222; /* Add a dark gray background for the buttons */
+    color: #fff; /* Set the text color to white */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333; /* Slightly lighter shade on hover */
+}
+
